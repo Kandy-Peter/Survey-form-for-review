@@ -3,7 +3,7 @@
 
 Take a look to my survey-form
 
-![screenshot](.survey-form.png)
+![screenshot](./survey-form.png)
 
 
 ## Built With
