@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: rgb(48, 48, 48);
+}
+
+body {
+  background-image: url('./myBackgroung.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.container {
+  width: 70%;
+  margin: 0.7rem auto;
+  border-top: 1px solid #fff;
+  box-shadow: 0 2px 10px rgb(153, 173, 192);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.349);
+  border-radius: 1rem;
+}
+
+.head-title {
+  padding: 20px;
+}
+
+#title {
+  font-size: 28px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#description {
+  font-size: 16px;
+  text-align: center;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  width: 600px;
+  height: 100%;
+  margin: 10px auto;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px rgba(149, 230, 255, 0.938);
+}
+
+#name-label,
+#email-label,
+#number-label,
+span {
+  color: rgb(77, 77, 77);
+  font-size: 16px;
+  margin: 0.5rem;
+  margin-top: 0.9rem;
+}
+
+#name,
+#email,
+#number,
+#dropdown {
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-color: #fff;
+  box-shadow: 0 2px 10px rgb(207, 207, 207);
+}
+
+#dropdown {
+  padding-right: 10px;
+}
+
+::placeholder {
+  color: rgb(165, 165, 165);
+}
+
+.radio-inputs {
+  background-color: #fff;
+  width: 180px;
+  height: 180px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgb(207, 207, 207);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputs {
+  width: 90%;
+  margin: 10px;
+}
+
+.checkbox {
+  height: 50px;
+}
+
+#textarea {
+  width: 500px;
+  height: 140px;
+  outline: none;
+  border: none;
+  margin: 20px;
+  padding: 15px;
+  box-shadow: 0 2px 10px rgb(207, 207, 207);
+}
+
+#submit {
+  width: 250px;
+  height: 50px;
+  color: rgb(0, 183, 255);
+  background-color: #fff;
+  border: 2px solid rgb(0, 183, 255);
+  margin: 0 auto;
+}
+
+#submit:hover {
+  background-color: rgb(0, 183, 255);
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 98%;
+    margin: 0.2rem auto;
+    padding: 0.4rem;
+    overflow: hidden;
+  }
+
+  form {
+    width: 95%;
+    height: 100%;
+    margin: 10px auto;
+    padding: 0.8rem;
+  }
+
+  #textarea {
+    width: 95%;
+    height: 110px;
+    margin: 10px;
+    padding: 8px;
+  }
+
+  #submit {
+    width: 150px;
+    height: 45px;
+  }
+}
